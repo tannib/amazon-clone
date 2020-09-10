@@ -2,9 +2,11 @@ import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import Header from "./Header";
-// import Nav from "./Nav";
+import Home from "./Home";
+// import Header from "./Header";
 // import Banner from "./Banner";
+// import Product from "./Product";
+// import Nav from "./Nav";
 // import Card from "./Card";
 
 function App() {
@@ -15,10 +17,10 @@ function App() {
           <Route path="/checkout"></Route>
           <Route path="/login"></Route>
           <Route path="/">
-            <Header />
+            <Home />
+
             {/* <Nav />
-      <Banner />
-      <Card /> */}
+            <Card /> */}
           </Route>
         </Switch>
       </div>

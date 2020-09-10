@@ -1,0 +1,9 @@
+.product__home-row:first-child {
+  margin-top: 70px;
+}
+
+.product__home-row {
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+}

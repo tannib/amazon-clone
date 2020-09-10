@@ -3,17 +3,9 @@ import "./Header.css";
 import MenuIcon from "@material-ui/icons/Menu";
 import SearchIcon from "@material-ui/icons/Search";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
-// import { makeStyles } from "@material-ui/core/styles";
 import { Link } from "react-router-dom";
 
-// const useStyles = makeStyles({
-//   menu_icon: {
-//     color: "white",
-//   },
-// });
-
 const Header = () => {
-  //   const classes = useStyles();
   return (
     <div className="header">
       <MenuIcon className="header__menu" />
