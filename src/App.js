@@ -2,25 +2,27 @@ import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
+import Header from "./Header";
 import Home from "./Home";
-// import Header from "./Header";
-// import Banner from "./Banner";
-// import Product from "./Product";
-// import Nav from "./Nav";
-// import Card from "./Card";
+import Checkout from "./Checkout";
+import Login from "./Login";
 
 function App() {
   return (
     <Router>
       <div className="app">
         <Switch>
-          <Route path="/checkout"></Route>
-          <Route path="/login"></Route>
+          <Route path="/checkout">
+            <Header />
+            <Checkout />
+          </Route>
+          <Route path="/login">
+            <Header />
+            <Login />
+          </Route>
           <Route path="/">
+            <Header />
             <Home />
-
-            {/* <Nav />
-            <Card /> */}
           </Route>
         </Switch>
       </div>

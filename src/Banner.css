@@ -1,19 +1,22 @@
 .banner {
   position: relative;
-  width: 100%;
   display: flex;
   flex-direction: column;
   text-align: center;
   color: #fff;
-  background-image: linear-gradient(
-      to top,
-      rgb(235, 237, 237) 5%,
-      rgba(117, 19, 93, 0) 50%
-    ),
-    url("https://images-eu.ssl-images-amazon.com/images/G/29/AmazonMusic/2020/ACQ/Campaign/IT-IT_081720_Katana_ACQ_GW_Hero_D_3000x1200_CV10._CB406756510_.jpg");
-  background-size: contain;
-  height: 600px;
-  background-repeat: no-repeat;
+  height: 700px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner__image {
+  object-fit: cover;
+  width: 1500px;
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 50%,
+    rgba(0, 0, 0, 0)
+  );
 }
 
 .banner > h1 {
@@ -24,10 +27,44 @@
 .banner__card-container {
   display: flex;
   position: absolute;
-  top: 240px;
+  top: 270px;
   left: 50%;
   transform: translate(-50%, 0);
   width: 100%;
   padding: 0 15px;
   min-width: 800px;
+}
+
+@media (max-width: 1330px) {
+  .banner__image {
+    transform: translateX(-70px);
+  }
+}
+
+@media (max-width: 1260px) {
+  .banner__image {
+    transform: translateX(-190px);
+  }
+}
+
+@media (max-width: 1000px) {
+  .banner__image {
+    transform: translateX(-250px);
+  }
+}
+
+@media (max-width: 870px) {
+  .banner__image {
+    transform: translateX(-310px);
+  }
+}
+
+@media (max-width: 830px) {
+  .banner__image {
+    transform: translateX(-345px);
+  }
+
+  .card:last-child {
+    display: none;
+  }
 }

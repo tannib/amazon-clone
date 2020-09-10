@@ -5,6 +5,11 @@ import Card from "./Card";
 const Banner = () => {
   return (
     <div className="banner">
+      <img
+        src="https://images-eu.ssl-images-amazon.com/images/G/29/AmazonMusic/2020/ACQ/Campaign/IT-IT_081720_Katana_ACQ_GW_Hero_D_3000x1200_CV10._CB406756510_.jpg"
+        alt=""
+        className="banner__image"
+      />
       <div className="banner__card-container">
         <Card
           title="Dispositivi Amazon a meno di 70€"
@@ -13,7 +18,7 @@ const Banner = () => {
           link="Scopri di più"
         />
         <Card
-          title="Spedizione gratuita sul tuo primo ordine idoneo"
+          title="Spedizione gratuita sul tuo primo ordine"
           src="https://images-eu.ssl-images-amazon.com/images/G/29/Events/2020/EducateCustomers/FDFO_CatCard_DT_X1_379X304._SY608_CB432652005_.jpg"
           caption=""
           link="Scopri le condizioni"

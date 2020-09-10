@@ -1,15 +1,14 @@
 import React from "react";
 import "./Home.css";
-import Header from "./Header";
 import Banner from "./Banner";
 import Product from "./Product";
 
 const Home = () => {
   return (
     <div className="home">
-      <Header />
       <Banner />
       <div className="product__home">
+        <h2>Visti di recente:</h2>
         <div className="product__home-row">
           <Product
             id="12321341"
