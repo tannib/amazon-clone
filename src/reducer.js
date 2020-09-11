@@ -1,14 +1,5 @@
 export const initialState = {
-  basket: [
-    {
-      id: "12321341",
-      title: "The Lean Startup",
-      price: 11.96,
-      rating: 5,
-      img:
-        "https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._SX325_B01,204,203,200_.jpg",
-    },
-  ],
+  basket: [],
   user: null,
 };
 
@@ -18,6 +9,11 @@ export const getBasketTotal = (basket) =>
 const reducer = (state, action) => {
   console.log(action);
   switch (action.type) {
+    case "SET_USER":
+      return {
+        ...state,
+        user: action.user,
+      };
     case "ADD_TO_BASKET":
       // Logic for adding item to basket
       return { ...state, basket: [...state.basket, action.item] };
