@@ -111,9 +111,26 @@
   .header__tool-line-1 {
     font-size: 9px;
   }
-  
+
   .header__tool-line-2 {
     font-size: 12px;
     font-weight: 800;
+  }
+}
+
+@media (max-width: 425px) {
+  .header__search {
+    display: none;
+  }
+
+  .header__link:nth-of-type(2) {
+    display: none;
+  }
+  .header__link:nth-of-type(3) {
+    /* display: none; */
+  }
+
+  .header__icon > img {
+    margin: 18px 10px 0 10px;
   }
 }

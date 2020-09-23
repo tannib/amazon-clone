@@ -39,3 +39,19 @@
   align-self: center;
   cursor: pointer;
 }
+
+@media (max-width: 425px) {
+  .product__info {
+    height: 50px;
+  }
+
+  .product__rating {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .product__home-row .product:nth-of-type(3) {
+    display: none;
+  }
+}
